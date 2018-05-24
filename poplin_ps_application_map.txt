@@ -8,3 +8,8 @@ OrganizationApplication maps to Task:
   // Intent.Value maps to proposal
   // ApplciationStatus maps to status
   PoplinCode maps to code
+  EIN maps to input (slice on = type)
+  NPI maps to input
+  EFTAccepted maps to input
+  ElectronicClaimsAccepted maps to input
+

@@ -2,6 +2,7 @@ Grammar:         DataElement 5.0
 Namespace:       poplin.ps
 Description:     "A provider screening application for a healthcare organization or provider."
 Uses:            shr.core, shr.base
+
 CodeSystem:      RQINT = http://hl7.org/fhir/request-intent
 
 EntryElement:	OrganizationApplication
@@ -11,8 +12,8 @@ Description:    "TODO"
 1..1      PoplinCode from PoplinActivitiesVS // Need a local, poplin-specific code set for this
 // 1..1      ProviderType // No value set exists because this is different in every state
 // 1..1      OrganizationName
-// 1..1      EIN // from 2.16.840.1.113883.4.4 ??
-// 1..1      NPI from http://hl7.org/fhir/sid/us-npi
+1..1      EIN
+1..1      NPI from http://hl7.org/fhir/sid/us-npi
 // 1..1      Address // One address? Many?
 // 1..1      Telephone // One telephone? Many?
 1..1      EFTAccepted
@@ -24,7 +25,7 @@ Description:    "TODO"
 
   Element:      Intent
   Description:  "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc."
-  Value:        CodeableConcept is RQINT#proposal
+  Value:        code is RQINT#proposal
 
   Element:      EFTAccepted
   Description:  "Indicates whether the provider organization accepts Electronic Funds Transfer (EFT)"
@@ -33,3 +34,11 @@ Description:    "TODO"
   Element:      ElectronicClaimsAccepted
   Description:  "Indicates whether the provider organization accepts Electronic Claims"
   Value:        boolean
+
+  Element: EIN
+  Description: ""
+  Value: code from urn:oid:2.16.840.1.113883.4.4
+
+  Element: NPI
+  Description: ""
+  Value: code
