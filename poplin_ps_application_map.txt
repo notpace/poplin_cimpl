@@ -4,7 +4,7 @@ Target:		FHIR_STU_3
 
 OrganizationApplication maps to Task:
   Intent maps to intent
-  fix intent as https://www.hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal
-  Intent.value maps to proposal
+  // fix intent to https://www.hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal
+  // Intent.Value maps to proposal
   // ApplciationStatus maps to status
   PoplinCode maps to code

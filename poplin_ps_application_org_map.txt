@@ -1,8 +1,0 @@
-Grammar:	Map 5.0
-Namespace:	poplin.ps
-Target:		FHIR_STU_3
-
-Task maps to Task:
-  // ApplicationCode maps to code
-  // ApplciationStatus maps to status
-  Intent maps to intent

@@ -6,25 +6,25 @@ CodeSystem:      RQINT = http://hl7.org/fhir/request-intent
 
 EntryElement:	OrganizationApplication
 Description:    "TODO"
-1..1			Intent
+1..1			Intent is #psApplicationOrganization
 // 1..1      ApplicationStatus from https://www.hl7.org/fhir/valueset-task-status.html // Already required in the base resource
-1..1      PoplinCode // Need a local, poplin-specific code set for this
+1..1      PoplinCode from PoplinActivitiesVS // Need a local, poplin-specific code set for this
 // 1..1      ProviderType // No value set exists because this is different in every state
 // 1..1      OrganizationName
 // 1..1      EIN // from 2.16.840.1.113883.4.4 ??
 // 1..1      NPI from http://hl7.org/fhir/sid/us-npi
-// 1..1      Address // One address? Many? 
+// 1..1      Address // One address? Many?
 // 1..1      Telephone // One telephone? Many?
 1..1      EFTAccepted
 1..1      ElectronicClaimsAccepted
 
   Element:      PoplinCode
   Description:  "A code that briefly describes the activity"
-  Value:        code is ps_application_organization
+  Value:        CodeableConcept from PoplinActivitiesVS
 
   Element:      Intent
   Description:  "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc."
-  Value:        code
+  Value:        CodeableConcept is RQINT#proposal
 
   Element:      EFTAccepted
   Description:  "Indicates whether the provider organization accepts Electronic Funds Transfer (EFT)"
