@@ -1,0 +1,124 @@
+{
+  "fileType": "Mapping",
+  "name": "Timing",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Timing",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Timing",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "event",
+        "sourcePath": [
+          "shr.core.OccurrenceTime"
+        ]
+      },
+      {
+        "target": "code",
+        "sourcePath": [
+          "shr.core.TimingCode"
+        ]
+      },
+      {
+        "target": "repeat.duration",
+        "sourcePath": [
+          "shr.core.EventDuration",
+          "shr.core.DurationRange",
+          "shr.core.LowerBound"
+        ]
+      },
+      {
+        "target": "repeat.durationMax",
+        "sourcePath": [
+          "shr.core.EventDuration",
+          "shr.core.DurationRange",
+          "shr.core.UpperBound"
+        ]
+      },
+      {
+        "target": "repeat.durationUnit",
+        "sourcePath": [
+          "shr.core.EventDuration",
+          "shr.core.DurationRange",
+          "shr.core.LowerBound",
+          "shr.core.Quantity",
+          "shr.core.Units",
+          "shr.core.Coding",
+          "code"
+        ]
+      },
+      {
+        "target": "repeat.period",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.RecurrenceInterval",
+          "shr.core.Duration"
+        ]
+      },
+      {
+        "target": "repeat.periodUnit",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.RecurrenceInterval",
+          "shr.core.Duration",
+          "shr.core.Units",
+          "shr.core.Coding",
+          "code"
+        ]
+      },
+      {
+        "target": "repeat.dayOfWeek",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.DayOfWeek"
+        ]
+      },
+      {
+        "target": "repeat.timeOfDay",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.TimeOfDay"
+        ]
+      },
+      {
+        "target": "repeat.when",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.DailyLifeEvent"
+        ]
+      },
+      {
+        "target": "repeat.offset",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.LifeEventOffset"
+        ]
+      },
+      {
+        "target": "repeat.frequency",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.CountPerInterval",
+          "shr.core.MinCount"
+        ]
+      },
+      {
+        "target": "repeat.frequencyMax",
+        "sourcePath": [
+          "shr.core.RecurrencePattern",
+          "shr.core.CountPerInterval",
+          "shr.core.MaxCount"
+        ]
+      }
+    ],
+    "cardMapping": [
+      {
+        "target": "repeat.periodMax",
+        "cardinality": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    ]
+  }
+}

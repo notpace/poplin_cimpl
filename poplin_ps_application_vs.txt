@@ -1,0 +1,6 @@
+Grammar:	ValueSet 5.0
+Namespace:	poplin.ps
+
+ValueSet: PoplinActivitiesVS
+#ps_application_organization  "Provider Screening Application for and Organization"
+#ps_application_provider  "Provider Screening Application for an Individual Provider"

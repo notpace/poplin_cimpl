@@ -1,0 +1,42 @@
+{
+  "fileType": "DataElement",
+  "name": "Subject",
+  "namespace": "shr.base",
+  "fqn": "shr.base.Subject",
+  "isEntry": false,
+  "isAbstract": false,
+  "description": "The person or thing that this entry relates to, usually the Person of Record. However, not all entries have health information specifically about the patient, but in different contexts, could refer to a fetus, family member (living or dead), device, location, organization, finding, condition, or intervention.",
+  "value": {
+    "valueType": "ChoiceValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    },
+    "options": [
+      {
+        "fqn": "unknown.Patient",
+        "valueType": "RefValue"
+      },
+      {
+        "fqn": "unknown.Group",
+        "valueType": "RefValue"
+      },
+      {
+        "fqn": "unknown.Device",
+        "valueType": "RefValue"
+      },
+      {
+        "fqn": "shr.core.Location",
+        "valueType": "RefValue"
+      },
+      {
+        "fqn": "unknown.RelatedPerson",
+        "valueType": "RefValue"
+      },
+      {
+        "fqn": "unknown.Organization",
+        "valueType": "RefValue"
+      }
+    ]
+  }
+}

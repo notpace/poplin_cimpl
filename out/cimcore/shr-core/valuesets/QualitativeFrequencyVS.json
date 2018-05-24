@@ -1,0 +1,34 @@
+{
+  "fileType": "ValueSet",
+  "name": "QualitativeFrequencyVS",
+  "namespace": "shr.core",
+  "fqn": "shr.core.QualitativeFrequencyVS",
+  "url": "http://example.com/shr/core/vs/QualitativeFrequencyVS",
+  "values": [
+    {
+      "system": "http://example.com/shr/core/cs/QualitativeFrequencyCS",
+      "code": "always",
+      "description": "Virtually always or every time"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/QualitativeFrequencyCS",
+      "code": "usually",
+      "description": "Frequently or often"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/QualitativeFrequencyCS",
+      "code": "sometimes",
+      "description": "Occasionally or sometimes"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/QualitativeFrequencyCS",
+      "code": "rarely",
+      "description": "Rarely"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/QualitativeFrequencyCS",
+      "code": "never",
+      "description": "Never"
+    }
+  ]
+}

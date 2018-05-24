@@ -1,0 +1,30 @@
+{
+  "fileType": "Mapping",
+  "name": "OrganizationApplication",
+  "namespace": "poplin.ps",
+  "fqn": "poplin.ps.OrganizationApplication",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Task",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "intent",
+        "sourcePath": [
+          "poplin.ps.Intent"
+        ]
+      },
+      {
+        "target": "code",
+        "sourcePath": [
+          "poplin.ps.PoplinCode"
+        ]
+      }
+    ],
+    "fixedValueMapping": [
+      {
+        "target": "intent",
+        "fixedValue": "proposal"
+      }
+    ]
+  }
+}

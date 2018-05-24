@@ -1,0 +1,48 @@
+{
+  "fileType": "Mapping",
+  "name": "Distance",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Distance",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Distance",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "value",
+        "sourcePath": [
+          "decimal"
+        ]
+      },
+      {
+        "target": "code",
+        "sourcePath": [
+          "shr.core.Units",
+          "shr.core.Coding",
+          "code"
+        ]
+      },
+      {
+        "target": "system",
+        "sourcePath": [
+          "shr.core.Units",
+          "shr.core.Coding",
+          "shr.core.CodeSystem"
+        ]
+      },
+      {
+        "target": "unit",
+        "sourcePath": [
+          "shr.core.Units",
+          "shr.core.Coding",
+          "shr.core.DisplayText"
+        ]
+      },
+      {
+        "target": "comparator",
+        "sourcePath": [
+          "shr.core.Comparator"
+        ]
+      }
+    ]
+  }
+}

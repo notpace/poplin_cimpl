@@ -1,0 +1,60 @@
+{
+  "fileType": "Mapping",
+  "name": "Attachment",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Attachment",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Attachment",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "data",
+        "sourcePath": [
+          "shr.core.BinaryData"
+        ]
+      },
+      {
+        "target": "contentType",
+        "sourcePath": [
+          "shr.core.ContentType"
+        ]
+      },
+      {
+        "target": "language",
+        "sourcePath": [
+          "shr.base.Language"
+        ]
+      },
+      {
+        "target": "url",
+        "sourcePath": [
+          "shr.core.ResourceLocation"
+        ]
+      },
+      {
+        "target": "size",
+        "sourcePath": [
+          "shr.core.ResourceSize"
+        ]
+      },
+      {
+        "target": "hash",
+        "sourcePath": [
+          "shr.core.Hash"
+        ]
+      },
+      {
+        "target": "title",
+        "sourcePath": [
+          "shr.core.Title"
+        ]
+      },
+      {
+        "target": "creation",
+        "sourcePath": [
+          "shr.core.CreationTime"
+        ]
+      }
+    ]
+  }
+}

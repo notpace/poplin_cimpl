@@ -1,0 +1,9 @@
+{
+  "fileType": "DataElement",
+  "name": "Any",
+  "namespace": "shr.base",
+  "fqn": "shr.base.Any",
+  "isEntry": false,
+  "isAbstract": true,
+  "description": "The top level class in the hierarchy"
+}

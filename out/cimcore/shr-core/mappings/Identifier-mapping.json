@@ -1,0 +1,48 @@
+{
+  "fileType": "Mapping",
+  "name": "Identifier",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Identifier",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Identifier",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "value",
+        "sourcePath": [
+          "string"
+        ]
+      },
+      {
+        "target": "use",
+        "sourcePath": [
+          "unknown.Purpose"
+        ]
+      },
+      {
+        "target": "type",
+        "sourcePath": [
+          "unknown.Type"
+        ]
+      },
+      {
+        "target": "system ",
+        "sourcePath": [
+          "shr.core.CodeSystem"
+        ]
+      },
+      {
+        "target": "period",
+        "sourcePath": [
+          "shr.core.EffectiveTimePeriod"
+        ]
+      },
+      {
+        "target": "assigner",
+        "sourcePath": [
+          "unknown.Issuer"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "fileType": "DataElement",
+  "name": "Definitional",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Definitional",
+  "isEntry": false,
+  "isAbstract": false,
+  "description": "An indicator that the item is a description of a thing, not a thing that actually exists. For example, a group of people between ages 30 and 40 with Type II diabetes can be defined, without existing as a set of particular people.",
+  "concepts": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C1704788"
+    }
+  ],
+  "value": {
+    "fqn": "boolean",
+    "valueType": "IdentifiableValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}

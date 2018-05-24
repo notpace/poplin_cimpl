@@ -1,0 +1,17 @@
+{
+  "fileType": "DataElement",
+  "name": "EFTAccepted",
+  "namespace": "poplin.ps",
+  "fqn": "poplin.ps.EFTAccepted",
+  "isEntry": false,
+  "isAbstract": false,
+  "description": "Indicates whether the provider organization accepts Electronic Funds Transfer (EFT)",
+  "value": {
+    "fqn": "boolean",
+    "valueType": "IdentifiableValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}

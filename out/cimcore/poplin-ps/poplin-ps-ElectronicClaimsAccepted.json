@@ -1,0 +1,17 @@
+{
+  "fileType": "DataElement",
+  "name": "ElectronicClaimsAccepted",
+  "namespace": "poplin.ps",
+  "fqn": "poplin.ps.ElectronicClaimsAccepted",
+  "isEntry": false,
+  "isAbstract": false,
+  "description": "Indicates whether the provider organization accepts Electronic Claims",
+  "value": {
+    "fqn": "boolean",
+    "valueType": "IdentifiableValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}

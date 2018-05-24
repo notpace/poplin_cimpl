@@ -1,0 +1,22 @@
+{
+  "fileType": "DataElement",
+  "name": "TypeAsaCoding",
+  "namespace": "shr.core",
+  "fqn": "shr.core.TypeAsaCoding",
+  "isEntry": false,
+  "isAbstract": false,
+  "concepts": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0332307"
+    }
+  ],
+  "value": {
+    "fqn": "shr.core.Coding",
+    "valueType": "IdentifiableValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}

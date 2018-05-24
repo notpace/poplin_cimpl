@@ -1,0 +1,69 @@
+{
+  "fileType": "ValueSet",
+  "name": "ClockDirectionVS",
+  "namespace": "shr.core",
+  "fqn": "shr.core.ClockDirectionVS",
+  "url": "http://example.com/shr/core/vs/ClockDirectionVS",
+  "values": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C3841389",
+      "description": "1 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442313",
+      "description": "2 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442315",
+      "description": "3 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442317",
+      "description": "4 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442319",
+      "description": "5 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442321",
+      "description": "6 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442323",
+      "description": "7 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442325",
+      "description": "8 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442327",
+      "description": "9 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0442329",
+      "description": "10 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C3841386",
+      "description": "11 o'clock position"
+    },
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C3841388",
+      "description": "12 o'clock position"
+    }
+  ]
+}

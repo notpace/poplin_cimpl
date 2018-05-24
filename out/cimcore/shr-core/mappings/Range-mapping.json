@@ -1,0 +1,24 @@
+{
+  "fileType": "Mapping",
+  "name": "Range",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Range",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Range",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "low",
+        "sourcePath": [
+          "shr.core.LowerBound"
+        ]
+      },
+      {
+        "target": "high",
+        "sourcePath": [
+          "shr.core.UpperBound"
+        ]
+      }
+    ]
+  }
+}

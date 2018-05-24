@@ -1,0 +1,17 @@
+{
+  "fileType": "DataElement",
+  "name": "Intent",
+  "namespace": "poplin.ps",
+  "fqn": "poplin.ps.Intent",
+  "isEntry": false,
+  "isAbstract": false,
+  "description": "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+  "value": {
+    "fqn": "code",
+    "valueType": "IdentifiableValue",
+    "card": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}

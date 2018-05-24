@@ -1,0 +1,39 @@
+{
+  "fileType": "Mapping",
+  "name": "Geoposition",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Geoposition",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "position.latitude",
+        "sourcePath": [
+          "shr.core.Latitude"
+        ]
+      },
+      {
+        "target": "position.longitude",
+        "sourcePath": [
+          "shr.core.Longitude"
+        ]
+      },
+      {
+        "target": "position.altitude",
+        "sourcePath": [
+          "shr.core.Altitude"
+        ]
+      }
+    ],
+    "cardMapping": [
+      {
+        "target": "position",
+        "cardinality": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    ]
+  }
+}

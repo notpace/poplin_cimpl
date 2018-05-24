@@ -1,0 +1,24 @@
+{
+  "fileType": "ValueSet",
+  "name": "YesNoUnknownVS",
+  "namespace": "shr.core",
+  "fqn": "shr.core.YesNoUnknownVS",
+  "url": "http://example.com/shr/core/vs/YesNoUnknownVS",
+  "values": [
+    {
+      "system": "http://example.com/shr/core/cs/YesNoUnknownCS",
+      "code": "yes",
+      "description": "Yes, or true"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/YesNoUnknownCS",
+      "code": "no",
+      "description": "No, or false"
+    },
+    {
+      "system": "http://example.com/shr/core/cs/YesNoUnknownCS",
+      "code": "unknown",
+      "description": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "fileType": "DataElement",
+  "name": "Content",
+  "namespace": "shr.base",
+  "fqn": "shr.base.Content",
+  "isEntry": false,
+  "isAbstract": true,
+  "description": "An item that can constitute the payload of an Entry, aka an EntryElement.",
+  "hierarchy": [
+    "shr.base.Any"
+  ],
+  "basedOn": [
+    "shr.base.Any"
+  ],
+  "fields": [
+    {
+      "fqn": "shr.base.RelatedEncounter",
+      "valueType": "IdentifiableValue",
+      "card": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "fqn": "shr.base.Author",
+      "valueType": "IdentifiableValue",
+      "card": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "fqn": "shr.base.Informant",
+      "valueType": "IdentifiableValue",
+      "card": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  ]
+}

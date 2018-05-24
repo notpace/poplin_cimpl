@@ -1,0 +1,30 @@
+{
+  "fileType": "Mapping",
+  "name": "Annotation",
+  "namespace": "shr.core",
+  "fqn": "shr.core.Annotation",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Annotation",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "text",
+        "sourcePath": [
+          "string"
+        ]
+      },
+      {
+        "target": "author[x]",
+        "sourcePath": [
+          "shr.base.Author"
+        ]
+      },
+      {
+        "target": "time",
+        "sourcePath": [
+          "shr.core.OccurrenceTime"
+        ]
+      }
+    ]
+  }
+}

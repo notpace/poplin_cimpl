@@ -1,0 +1,72 @@
+{
+  "fileType": "Mapping",
+  "name": "UnitedStatesAddress",
+  "namespace": "shr.core",
+  "fqn": "shr.core.UnitedStatesAddress",
+  "targetSpec": "FHIR_STU_3",
+  "targetItem": "Address",
+  "mappings": {
+    "fieldMapping": [
+      {
+        "target": "use",
+        "sourcePath": [
+          "unknown.Purpose"
+        ]
+      },
+      {
+        "target": "type",
+        "sourcePath": [
+          "unknown.Type"
+        ]
+      },
+      {
+        "target": "text",
+        "sourcePath": [
+          "shr.core.DisplayText"
+        ]
+      },
+      {
+        "target": "line",
+        "sourcePath": [
+          "shr.core.AddressLine"
+        ]
+      },
+      {
+        "target": "city",
+        "sourcePath": [
+          "shr.core.City"
+        ]
+      },
+      {
+        "target": "district",
+        "sourcePath": [
+          "shr.core.District"
+        ]
+      },
+      {
+        "target": "state",
+        "sourcePath": [
+          "shr.core.UnitedStatesState"
+        ]
+      },
+      {
+        "target": "postalCode",
+        "sourcePath": [
+          "shr.core.PostalCode"
+        ]
+      },
+      {
+        "target": "country",
+        "sourcePath": [
+          "shr.core.Country"
+        ]
+      },
+      {
+        "target": "period",
+        "sourcePath": [
+          "shr.core.EffectiveTimePeriod"
+        ]
+      }
+    ]
+  }
+}

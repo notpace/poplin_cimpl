@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "poplin-ps-Intent-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>EXAMPLE Intent Logical Model</b></p>\n  <p>Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.</p>\n</div>"
+  },
+  "url": "http://example.com/fhir/StructureDefinition/poplin-ps-Intent-model",
+  "identifier": [
+    {
+      "system": "http://example.com",
+      "value": "poplin.ps.Intent"
+    }
+  ],
+  "name": "IntentModel",
+  "title": "EXAMPLE Intent Logical Model",
+  "status": "draft",
+  "date": "2018-05-23",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "poplin-ps-Intent-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "poplin-ps-Intent-model",
+        "path": "poplin-ps-Intent-model",
+        "definition": "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "poplin-ps-Intent-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "poplin-ps-Intent-model.value",
+        "path": "poplin-ps-Intent-model.value",
+        "short": "Code representing indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "definition": "Code representing indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "poplin-ps-Intent-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "poplin-ps-Intent-model",
+        "path": "poplin-ps-Intent-model",
+        "definition": "Indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "poplin-ps-Intent-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "poplin-ps-Intent-model.value",
+        "path": "poplin-ps-Intent-model.value",
+        "short": "Code representing indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "definition": "Code representing indicates the level of actionability associated with the Task. I.e. Is this a proposed task, a planned task, an actionable task, etc.",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "poplin-ps-Intent-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "fileType": "Namespace",
+  "name": "shr.base",
+  "description": "The SHR Base domain contains definitions for basic classes in SHR, including the base Entry and Any. The classes below Any are are Finding, Action, and Entity."
+}

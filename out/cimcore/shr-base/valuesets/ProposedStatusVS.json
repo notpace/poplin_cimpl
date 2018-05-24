@@ -1,0 +1,25 @@
+{
+  "fileType": "ValueSet",
+  "name": "ProposedStatusVS",
+  "namespace": "shr.base",
+  "fqn": "shr.base.ProposedStatusVS",
+  "description": "The status of a proposal.",
+  "url": "http://example.com/shr/base/vs/ProposedStatusVS",
+  "values": [
+    {
+      "system": "http://example.com/shr/base/cs/ProposedStatusCS",
+      "code": "proposed",
+      "description": "The proposal has been proposed, but not accepted or rejected."
+    },
+    {
+      "system": "http://example.com/shr/base/cs/ProposedStatusCS",
+      "code": "accepted",
+      "description": "The proposal was accepted."
+    },
+    {
+      "system": "http://example.com/shr/base/cs/ProposedStatusCS",
+      "code": "rejected",
+      "description": "The proposal was rejected"
+    }
+  ]
+}

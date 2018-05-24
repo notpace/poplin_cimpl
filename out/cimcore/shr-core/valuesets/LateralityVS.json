@@ -1,0 +1,24 @@
+{
+  "fileType": "ValueSet",
+  "name": "LateralityVS",
+  "namespace": "shr.core",
+  "fqn": "shr.core.LateralityVS",
+  "description": "Anatomical location or specimen further detailing the side(s) of interest.",
+  "concepts": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0925205",
+      "display": "Anatomical laterality"
+    }
+  ],
+  "url": "http://example.com/shr/core/vs/LateralityVS",
+  "rules": {
+    "includesFromCode": [
+      {
+        "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+        "code": "C99073",
+        "description": "CDISC SDTM Laterality Terminology"
+      }
+    ]
+  }
+}
