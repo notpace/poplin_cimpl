@@ -4,12 +4,10 @@ Target:		FHIR_STU_3
 
 OrganizationApplication maps to Task:
   Intent maps to intent
-  // fix intent to https://www.hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal
-  // Intent.Value maps to proposal
-  // ApplciationStatus maps to status
   PoplinCode maps to code
   EIN maps to input (slice on = type)
   NPI maps to input
   EFTAccepted maps to input
   ElectronicClaimsAccepted maps to input
-
+  ProviderType maps to input
+  OrganizationName maps to input

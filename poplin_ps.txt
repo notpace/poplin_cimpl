@@ -8,10 +8,9 @@ CodeSystem:      RQINT = http://hl7.org/fhir/request-intent
 EntryElement:	OrganizationApplication
 Description:    "TODO"
 1..1			Intent is #psApplicationOrganization
-// 1..1      ApplicationStatus from https://www.hl7.org/fhir/valueset-task-status.html // Already required in the base resource
-1..1      PoplinCode from PoplinActivitiesVS // Need a local, poplin-specific code set for this
-// 1..1      ProviderType // No value set exists because this is different in every state
-// 1..1      OrganizationName
+1..1      PoplinCode from PoplinActivitiesVS // Using a local, poplin-specific code set for this
+1..1      ProviderType // No value set exists because this is different in every state
+1..1      OrganizationName
 1..1      EIN
 1..1      NPI from http://hl7.org/fhir/sid/us-npi
 // 1..1      Address // One address? Many?
@@ -35,10 +34,18 @@ Description:    "TODO"
   Description:  "Indicates whether the provider organization accepts Electronic Claims"
   Value:        boolean
 
-  Element: EIN
-  Description: ""
-  Value: code from urn:oid:2.16.840.1.113883.4.4
+  Element:      EIN
+  Description:  "Employer Identification Number"
+  Value:        code from urn:oid:2.16.840.1.113883.4.4 // TODO: if an HL7 url exists, use that instead
 
-  Element: NPI
-  Description: ""
-  Value: code
+  Element:      NPI
+  Description:  "National Provider Identifier"
+  Value:        code
+
+  Element:      ProviderType
+  Description:  "Provider Type"
+  Value:        string
+
+  Element:      OrganizationName
+  Description:  "Organization Name"
+  Value:        string

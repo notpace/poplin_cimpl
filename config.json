@@ -1,16 +1,16 @@
 {
-    "projectName": "Example Project",
-    "projectShorthand": "EXAMPLE",
-    "projectURL": "http://example.com",
+    "projectName": "Poplin",
+    "projectShorthand": "Poplin",
+    "projectURL": "http://projectpoplin.org",
     "fhirURL": "http://example.com/fhir",
     "igIndexContent": "exampleIndexContent.html",
-    "publisher": "Example Publisher",
+    "publisher": "MITRE",
     "contact": [
         {
             "telecom": [
                 {
                     "system": "url",
-                    "value": "http://example.com"
+                    "value": "http://projectpoplin.org"
                 }
             ]
         }
