@@ -4,7 +4,7 @@
     "projectURL": "http://projectpoplin.org",
     "fhirURL": "http://example.com/fhir",
     "igIndexContent": "exampleIndexContent.html",
-    "publisher": "MITRE",
+    "publisher": "Poplin Working Group",
     "contact": [
         {
             "telecom": [

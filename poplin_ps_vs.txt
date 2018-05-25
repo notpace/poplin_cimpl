@@ -2,5 +2,5 @@ Grammar:	ValueSet 5.0
 Namespace:	poplin.ps
 
 ValueSet: PoplinActivitiesVS
-#psApplicationOrganization  "Provider Screening Application for and Organization"
-#psApplicationProvider  "Provider Screening Application for an Individual Provider"
+#psOrganizationApplication  "Provider Screening Application for and Organization"
+#psProviderApplication  "Provider Screening Application for an Individual Provider"
