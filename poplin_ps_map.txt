@@ -11,3 +11,13 @@ OrganizationApplication maps to Task:
   ElectronicClaimsAccepted maps to input
   ProviderType maps to input
   OrganizationName maps to input
+
+ProviderApplication maps to Task:
+  Intent maps to intent
+  PoplinCode maps to code
+  SSN maps to input (slice on = type)
+  NPI maps to input
+  EFTAccepted maps to input
+  ElectronicClaimsAccepted maps to input
+  ProviderType maps to input
+  ProviderName maps to input

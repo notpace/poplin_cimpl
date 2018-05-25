@@ -5,13 +5,26 @@ Uses:            shr.core, shr.base
 
 CodeSystem:      RQINT = http://hl7.org/fhir/request-intent
 
-EntryElement:	OrganizationApplication
+EntryElement:	OrganizationApplication 
 Description:    "A screening application for a healthcare organization"
 1..1			Intent is RQINT#proposal
 1..1      PoplinCode is #psOrganizationApplication
 1..1      ProviderType // No value set exists because this is different in every state
 1..1      OrganizationName
 1..1      EIN
+1..1      NPI
+1..1      Address // One address? Many?
+1..1      Telephone // One telephone? Many?
+1..1      EFTAccepted
+1..1      ElectronicClaimsAccepted
+
+EntryElement:	ProviderApplication 
+Description:    "A screening application for a healthcare organization"
+1..1			Intent is RQINT#proposal
+1..1      PoplinCode is #psProviderApplication
+1..1      ProviderType // No value set exists because this is different in every state
+1..1      ProviderName
+1..1      SSN
 1..1      NPI
 1..1      Address // One address? Many?
 1..1      Telephone // One telephone? Many?
@@ -42,12 +55,20 @@ Description:    "A screening application for a healthcare organization"
   Description:  "National Provider Identifier"
   Value:        code from http://hl7.org/fhir/sid/us-npi
 
+  Element:      SSN
+  Description:  "Social Security Number"
+  Value:        code from http://hl7.org/fhir/sid/us-ssn
+
   Element:      ProviderType
   Description:  "Provider Type"
   Value:        string
 
   Element:      OrganizationName
   Description:  "Organization Name"
+  Value:        string
+
+  Element:      ProviderName
+  Description:  "Provider Name"
   Value:        string
 
   Element:      Telephone
