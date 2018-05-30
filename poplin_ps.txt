@@ -19,11 +19,12 @@ Description:    "A screening application for a healthcare organization"
 1..1      ElectronicClaimsAccepted
 
 EntryElement:	ProviderApplication 
-Description:    "A screening application for a healthcare organization"
+Description:    "A screening application for a healthcare provider"
 1..1			Intent is RQINT#proposal
 1..1      PoplinCode is #psProviderApplication
 1..1      ProviderType // No value set exists because this is different in every state
 1..1      ProviderName
+1..1      ProviderDOB
 1..1      SSN
 1..1      NPI
 1..1      Address // One address? Many?
@@ -62,6 +63,10 @@ Description:    "A screening application for a healthcare organization"
   Element:      ProviderType
   Description:  "Provider Type"
   Value:        string
+
+  Element:      ProviderDOB
+  Description:  "Provider Date of Birth"
+  Value:        date
 
   Element:      OrganizationName
   Description:  "Organization Name"

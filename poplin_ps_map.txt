@@ -21,3 +21,4 @@ ProviderApplication maps to Task:
   ElectronicClaimsAccepted maps to input
   ProviderType maps to input
   ProviderName maps to input
+  ProviderDOB maps to input
