@@ -5,10 +5,10 @@ Uses:            shr.core, shr.base
 
 CodeSystem:      RQINT = http://hl7.org/fhir/request-intent
 
-EntryElement:	OrganizationApplication 
-Description:    "A screening application for a healthcare organization"
+EntryElement:	OrganizationApplication
+Description:  "A screening application for a healthcare organization"
 1..1			Intent is RQINT#proposal
-1..1      PoplinCode is #psOrganizationApplication
+1..1      PoplinCode is #ps_organization_application
 1..1      ProviderType // No value set exists because this is different in every state
 1..1      OrganizationName
 1..1      EIN
@@ -19,9 +19,10 @@ Description:    "A screening application for a healthcare organization"
 1..1      ElectronicClaimsAccepted
 
 EntryElement:	ProviderApplication 
+Based on:     Task
 Description:    "A screening application for a healthcare provider"
 1..1			Intent is RQINT#proposal
-1..1      PoplinCode is #psProviderApplication
+1..1      PoplinCode is #ps_provider_application
 1..1      ProviderType // No value set exists because this is different in every state
 1..1      ProviderName
 1..1      ProviderDOB
@@ -29,8 +30,10 @@ Description:    "A screening application for a healthcare provider"
 1..1      NPI
 1..1      Address // One address? Many?
 1..1      Telephone // One telephone? Many?
-1..1      EFTAccepted
-1..1      ElectronicClaimsAccepted
+          // Input
+          1..1      EFTAccepted
+          1..1      ElectronicClaimsAccepted
+// 0..*      Qualification // What kinds of qualifications would be helpful?  Are they necessary?
 
   Element:      PoplinCode
   Description:  "A code that briefly describes the activity"
@@ -41,24 +44,33 @@ Description:    "A screening application for a healthcare provider"
   Value:        code
 
   Element:      EFTAccepted
+  Based on:     Input
   Description:  "Indicates whether the provider organization accepts Electronic Funds Transfer (EFT)"
   Value:        boolean
+  InputType is #eft_accepted
+  // InputLabel is "EFT Accepted"
 
   Element:      ElectronicClaimsAccepted
+  Based on:     Input
   Description:  "Indicates whether the provider organization accepts Electronic Claims"
   Value:        boolean
+  InputType is #electronic_claims_accepted
+  // InputLabel is "Electronic Claims Accepted"
 
   Element:      EIN
   Description:  "Employer Identification Number"
-  Value:        code from urn:oid:2.16.840.1.113883.4.4 // TODO: if an HL7 url exists, use that instead
+  Value:        code from urn:oid:2.16.840.1.113883.4.4
+  // TODO: if an HL7 url exists, use that instead
 
   Element:      NPI
   Description:  "National Provider Identifier"
   Value:        code from http://hl7.org/fhir/sid/us-npi
+  // Could also use LOINC 76468-8 for Organization NPI or 44951-2 for Physician NPI, but these would still need the ID associated with them
 
   Element:      SSN
   Description:  "Social Security Number"
   Value:        code from http://hl7.org/fhir/sid/us-ssn
+ // Could also use LOINC 45396-9 for Social Security Number [Identifier], but these would still need the ID associated with them
 
   Element:      ProviderType
   Description:  "Provider Type"
@@ -151,3 +163,27 @@ Description:    "A screening application for a healthcare provider"
       Based on:		TimePeriod
       Concept:		MTH#C2985763
       Description:	"The date and time span for which something is active, valid, or in force."
+
+// Element:  TaskInput
+// Description: "It's a thing"
+// Value: date or dateTime or string or boolean or code
+// 1..1  InputLabel
+// 1..1  InputType
+
+Element:      Task
+Description:  "Here be dragons"
+0..*          Input
+// 0..*          Output
+
+Element:      Input
+Description:  "Anything that is an input to a task"
+1..1          InputType
+1..1          InputLabel
+
+  Element:      InputType
+  Description:  "Thing"
+  Value:        CodeableConcept
+
+  Element:      InputLabel
+  Description:  "Human name for a task input"
+  Value:        string

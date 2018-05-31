@@ -2,5 +2,7 @@ Grammar:	ValueSet 5.0
 Namespace:	poplin.ps
 
 ValueSet: PoplinActivitiesVS
-#psOrganizationApplication  "Provider Screening Application for and Organization"
-#psProviderApplication  "Provider Screening Application for an Individual Provider"
+#ps_organization_application  "Provider Screening Application for and Organization"
+#ps_provider_application  "Provider Screening Application for an Individual Provider"
+#eft_accepted "A provider accepts electronic funds transfer"
+#electronic_claims_accepted "A provider accepts electronic claims"

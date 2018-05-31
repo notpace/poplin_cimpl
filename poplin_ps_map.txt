@@ -11,14 +11,27 @@ OrganizationApplication maps to Task:
   ElectronicClaimsAccepted maps to input
   ProviderType maps to input
   OrganizationName maps to input
+  Address maps to input
+  Telephone maps to input
 
 ProviderApplication maps to Task:
   Intent maps to intent
   PoplinCode maps to code
-  SSN maps to input (slice on = type)
-  NPI maps to input
-  EFTAccepted maps to input
+  // SSN maps to input (slice on = type)
+  // NPI maps to input
+  EFTAccepted maps to input (slice on = type)
+  EFTAccepted.InputType maps to input.type as #eft_accepted
+  EFTAccepted.InputLabel maps to input.type.text
+  // fix input.type to #eft_accepted
+  EFTAccepted.Value maps to input.value[x]
   ElectronicClaimsAccepted maps to input
-  ProviderType maps to input
-  ProviderName maps to input
-  ProviderDOB maps to input
+  ElectronicClaimsAccepted.InputType maps to input.type as #electronic_claims_accepted
+  ElectronicClaimsAccepted.InputLabel maps to input.type.text
+  // fix input.type to #electronic_claims_accepted
+  ElectronicClaimsAccepted.Value maps to input.value[x]
+  // ProviderType maps to input
+  // ProviderName maps to input
+  // ProviderDOB maps to input
+  // // ProviderDOB.Value maps to date
+  // Address maps to input
+  // Telephone maps to input
